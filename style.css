@@ -330,3 +330,278 @@ h1, h2, h3, h4 {line-height: 1px;}
 
 
 
+
+
+
+
+/* MOBILE */ 
+
+
+@media only screen and (max-width:760px) {
+
+    body, html {
+        height: 100%;
+        margin:0;
+        padding: 0;
+        color:#fff;
+    }
+
+    .container {
+        all: revert;
+    }
+    
+    h1, h2, h3, h4 {line-height: 1px;}
+    
+    .main-section {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .header {
+        margin-top: 20px;
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .info-home-box {
+        text-align: justify;
+        top:115px;
+        left:0;
+        width:300px;
+        font-size: 15px;
+        margin-bottom: 300px;
+    }
+
+    .menu {
+        background: none;
+        width:290px;
+        transform: skewX(0deg);
+        position: absolute;
+        top:0;
+        right: 0;
+        z-index: 1;    
+        }
+        .menu ul li 
+        {
+        
+        transform: skewX(0deg);
+          
+        }
+        
+        .hamburger {
+            display: inline;
+            cursor: pointer;
+            z-index: 11;
+        }
+    
+    
+         
+        .barF,
+        .barS,
+        .barT {
+            width: 32px;
+            height: 5px;
+            margin: 6px 0;
+            background-color: #fff;
+        }
+    
+        .rotate {
+            position: absolute;
+            top: 33px;
+            right: 25px;
+            transform: rotate(45deg);
+            transition: .3s;
+        }
+        .rotate-second {
+            position: absolute;
+            top: 33px;
+            right: 25px;
+            transform: rotate(-45deg);
+            transition: .3s;
+        }
+        .animation {
+            transition: .3s;
+        }
+    
+        #menuView {
+            position: fixed;
+            margin: 0;
+            width: 600px;
+            height: 507px;
+            background-color:rgb(30, 36, 45);
+            color: white;
+            transition: 0.5s;
+            transform: skew(50deg) translateX(0);
+            display: none;
+    
+        }
+        #menuView li a {
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+            
+        }
+        #menuView li {
+            margin: 50px 150px;
+            padding-top: 0px;
+            list-style-type: none;
+            display: flex;
+            transform: skew(-50deg) translateX(0);
+        }
+
+
+        .about-section {
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+            width: 100%;
+        }
+
+
+                
+
+        .bio, .skills {
+            width:100%;
+            height: 100%;
+        }
+
+        .about-header {
+            margin-top:80px;
+        }
+
+        .my-photo {
+            padding:20px;
+            width:200px;
+            height:200px;
+            border-radius:50%;
+        }
+
+        .about-me-text {
+            margin: 45px auto;
+            text-align: justify;
+            width: 80%;
+        }
+
+        .skills {
+            width: 80%;
+            margin: auto;
+        }
+
+        .top-list-text {
+            margin-top:60px;
+        }
+
+        .skills-checkbox {
+            list-style-image:url("img/check.png");
+            text-align: left;
+        }
+
+        .skills > p {
+            text-align: justify;
+        }
+
+        .special-skills {
+            margin-top: 30px;
+            font-size: 20px;
+            text-align: left;
+        }
+
+        .git-btn {
+            text-align: left;
+            margin-top: 50px;
+            
+        }
+
+        .git-btn > button {
+            width:130px;
+            padding: 5px;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .git-btn > button > img {
+            margin-left:5px;
+        }
+
+
+        .services-section, .portfolio-section {
+            height: 100%;
+            background-color:rgb(30, 36, 45);
+            margin-top: -3.75rem;
+        }
+
+
+                
+        .portfolio-section {
+            width: 100%;
+            height: 100%;  
+            display: flex;
+            flex-direction: column; 
+            text-align: center;
+        }
+
+        .portfolio-header {
+            margin-top: 250px;
+           
+        }
+
+        .portfolio-div-box {
+            margin-top: 50px;
+            display: flex;
+            height: 100%;
+            justify-content: center;
+            flex-direction: column;
+            align-items: flex-start;
+            flex-wrap: wrap;
+
+        }
+
+
+        .project-container {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-content: flex-start;
+            flex-wrap: wrap;
+            
+        }
+
+        .project-box {
+            border: 0;
+            width: 350px;
+            margin: 5px;
+        }
+
+        .thumbnail-style {
+            border-radius: 5px;
+            width: 350px;
+            height: 187px;
+        }
+
+        .porfolio-container-title {
+            margin:25px 0 60px
+        }
+
+        .flip-card {
+            display: flex;
+            width: 350px;
+            height: 187px;
+        }
+
+        .contact-box {
+            margin-top:150px;
+        }
+
+        .footer-copyright {
+            width:80%;
+            text-align: center;
+            margin-bottom: 100px;
+        }
+
+
+}

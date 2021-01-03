@@ -2,7 +2,7 @@
 <html lang="pl">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
     <link href="style.css" rel="stylesheet">
@@ -19,8 +19,16 @@
                     <h1>&lt;/ MK.PL &gt;</h1>
                 </div>
 
+
+                <div class="hamburger">
+                    <div class="barF"></div>
+                    <div class="barS bar-hide"></div>
+                    <div class="barT"></div>
+                </div>
+
+
                 <div class="menu">
-                    <ul class="menu-bar">
+                    <ul class="menu-bar" id="menuView">
                         <li><a href="#about" class="underline">O MNIE</a></li>
                         <li><a href="#portfolio" class="underline">PORTFOLIO</a></li>
                         <li><a href="#contact" class="underline">KONTAKT</a></li>
@@ -39,7 +47,7 @@
 
         </div>
 
-        <div class="about-section" id="about">
+     <div class="about-section" id="about">
 
             <div class="bio">
                 <h1 class="about-header">O MNIE</h1>
@@ -53,7 +61,7 @@
 
             <div class="skills">
                 <h1 class="about-header">TECHNOLOGIE</h1>
-                <p>Tworząc strony WWW posługuję się niżej wymienionymi technologiami, stale staram się rozwijać w nowych gałęziach programowania.</p>
+                <p class="top-list-text">Tworząc strony WWW posługuję się niżej wymienionymi technologiami, stale staram się rozwijać w nowych gałęziach programowania.</p>
                 <ul>
                     <li class="skills-checkbox">HTML/CSS</li>
                     <li class="skills-checkbox">JavaScript ES6</li>
@@ -64,7 +72,7 @@
                     <li class="skills-checkbox">React - podstawy</li>
                 </ul>
 
-                <h3>Dodatkownie umiejętności / narzędzia</h3>
+                <h3 class="special-skills">Dodatkowo:</h3>
                 <p>Photoshop, GIMP, git, Microsoft Office </p>
 
                 <div class="git-btn">
@@ -75,9 +83,11 @@
 
         </div>
 
-      
+    
 
         <div class="portfolio-section" id="portfolio">
+
+            
             <h1 class="portfolio-header"> PORTFOLIO</h1>
 
             <h3 class="porfolio-container-title">Strony oraz aplikacje WWW</h3>
@@ -245,9 +255,9 @@
 
             </div>
             
-        </div>
+        </div> 
 
-            <div class="contact-section" id="contact">
+             <div class="contact-section" id="contact">
                  <div class="contact-box">
                     <img src="img/email.png">
                     <p>Jeśli masz jakieś pytania skontaktuj się przed adres  
@@ -260,7 +270,7 @@
                 </div>
                 
             </div>
-     
+    
 
 
     
