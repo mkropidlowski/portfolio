@@ -35,7 +35,7 @@ function hideMenuWhenScroll()
     if(document.body.scrollTop > 1 || document.documentElement.scrollTop > 1)
     {
         const hideValue = document.querySelector('.hide');
-        hideValue.style.display = "none";
+        hideValue.style.display = 'none';
         bar1.classList.remove('rotate');
         bar3.style.display = 'block';
         bar2.classList.remove('rotate-second');
