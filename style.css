@@ -7,6 +7,7 @@ body, html {
     margin:0;
     padding: 0;
     color:#fff;
+    scroll-behavior: smooth;
 }
 
 h1, h2, h3, h4 {line-height: 1px;}
@@ -377,11 +378,11 @@ h1, h2, h3, h4 {line-height: 1px;}
 
     .menu {
         background: none;
-        width:290px;
+        width:100%;
         transform: skewX(0deg);
         position: absolute;
         top:0;
-        right: 0;
+        left: 0;
         z-index: 1;    
         }
         .menu ul li 
@@ -429,12 +430,12 @@ h1, h2, h3, h4 {line-height: 1px;}
         #menuView {
             position: fixed;
             margin: 0;
-            width: 600px;
+            width:100%;
             height: 507px;
             background-color:rgb(30, 36, 45);
             color: white;
             transition: 0.5s;
-            transform: skew(50deg) translateX(0);
+           
             display: none;
     
         }
@@ -448,8 +449,10 @@ h1, h2, h3, h4 {line-height: 1px;}
             margin: 50px 150px;
             padding-top: 0px;
             list-style-type: none;
+            width: 240px;
             display: flex;
-            transform: skew(-50deg) translateX(0);
+            align-items: center;
+            /* transform: skew(-50deg) translateX(0); */
         }
 
 
